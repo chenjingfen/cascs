@@ -1,0 +1,377 @@
+[
+  {
+    "vulInfo": {
+      "riskLevel": "高危",
+      "getControl": "admin",
+      "vulName": "Telnet服务弱密钥",
+      "vulType": "弱密钥",
+      "description": "在实现Telnet功能时候,采用诸如admin/admin,admin/12345之类的用户名密码,这使得远程攻击者很容易破解",
+      "source": "IIE",
+      "type": "配置错误",
+      "version": "1.0",
+      "devicePermit": "controllable",
+      "platform": "Linux",
+      "patch": false,
+      "referIds": [],
+      "getPicture": "false",
+      "service": "Telnet",
+      "vulExist": false,
+      "vulId": "IIE-weakPW-TELNET"
+    },
+    "parent": "40b0ebd1ac8b417953643c993e6e6b63",
+    "resType": "vul_info",
+    "priLevel": 5,
+    "portInfo": {
+      "protocol": "Telnet",
+      "port": 23,
+      "timestampSent": 1500934383000,
+      "banner": "#-----------------------------------------------------------------------\r\n# SAMSUNG ELECTRONICS CO., LTD. Login\r\n#-----------------------------------------------------------------------\r\n\r\n\r\rlogin: ",
+      "deviceInfo": {
+        "deviceType": "IP Camera",
+        "deviceCategory": "Monitor",
+        "deviceService": "Telnet",
+        "deviceBrand": "Samsung",
+        "deviceLocation": {
+          "owner": "",
+          "country": "美国",
+          "areaCode": "",
+          "province": "加利福尼亚州",
+          "city": "",
+          "countryCode": "US",
+          "timezone": "America/Los_Angeles",
+          "district": "",
+          "lon": "-119.4179324",
+          "operator": "globalcapacity.com",
+          "lat": "36.778261"
+        }
+      },
+      "status": "",
+      "timestampReceived": 1500934383000
+    },
+    "rid": "12161_68_165_104_137",
+    "userName": "device_search",
+    "ipInfo": {
+      "ip": "68.165.104.137"
+    },
+    "userId": "12161",
+    "routing": "ff5f1e2375ac28ecb2d61b9c8296746b",
+    "vpsInfo": {
+      "vpsName": "10-8-65-100",
+      "vpsIpExternal": "107.150.124.73",
+      "vpsIpInternal": "127.0.0.1"
+    },
+    "appType": "device_search",
+    "id": "3e3e3f8e9e8b5ea522107cc55f2f6bda",
+    "lastModified": 1504594481829,
+    "taskId": "deviceScanTask_1501558594_23"
+  },
+  {
+    "vulInfo": {
+      "riskLevel": "高危",
+      "getControl": "admin",
+      "data": {
+        "ShellInfo": {},
+        "DBInfo": {},
+        "FileInfo": {},
+        "AdminInfo": {
+          "Username": "admin",
+          "Password": "admin"
+        },
+        "Database": {},
+        "SiteAttr": {},
+        "VerifyInfo": {},
+        "XSSInfo": {}
+      },
+      "vulName": "RTSP协议弱密钥",
+      "vulType": "弱密钥",
+      "description": "在实现RTSP功能时候,采用诸如admin/admin,admin/12345之类的弱密钥或者默认密钥,这使得远程攻击者很容易破解",
+      "source": "IIE",
+      "type": "配置错误",
+      "version": "1.0",
+      "devicePermit": "image_available",
+      "platform": "Linux",
+      "patch": false,
+      "referIds": [],
+      "getPicture": "false",
+      "service": "RTSP",
+      "vulExist": true,
+      "vulId": "IIE-weakPW-RTSP"
+    },
+    "parent": "fca539d853b15d81a8e3bcb7dd415bc9",
+    "resType": "vul_info",
+    "priLevel": 5,
+    "portInfo": {
+      "protocol": "RTSP",
+      "port": 554,
+      "timestampSent": 1503369636000,
+      "banner": "RTSP/1.0 401 Unauthorized\r\nServer: Rtsp Server/2.0\r\nCSeq: 2\r\nWWW-Authenticate: Digest realm=\"Login to 2G04A02PAMXM9ZJ\", nonce=\"4ab063e26d985b90e474eee0e8a82f8d\", \r\n\r\n",
+      "deviceInfo": {
+        "deviceCategory": "Monitor",
+        "deviceService": "RTSP",
+        "deviceBrand": "Dahua",
+        "deviceLocation": {
+          "owner": "",
+          "country": "法国",
+          "areaCode": "",
+          "province": "法国",
+          "city": "",
+          "countryCode": "FR",
+          "timezone": "Europe/Paris",
+          "district": "",
+          "lon": "1.71819",
+          "operator": "orange.com",
+          "lat": "46.71067"
+        }
+      },
+      "status": "401",
+      "timestampReceived": 1503369636000
+    },
+    "rid": "12161_193_251_74_252",
+    "userName": "device_search",
+    "ipInfo": {
+      "ip": "193.251.74.252"
+    },
+    "userId": "12161",
+    "routing": "d5735e501ccbe9ddc8b6cd1ef7bb0595",
+    "vpsInfo": {
+      "vpsName": "10-23-156-163",
+      "vpsIpExternal": "120.132.102.52",
+      "vpsIpInternal": "127.0.0.1"
+    },
+    "appType": "device_search",
+    "id": "032eae9b8747da595302a5a7078eb922",
+    "lastModified": 1505298166658,
+    "taskId": "deviceScanTask_1503368339_554"
+  },
+  {
+    "vulInfo": {
+      "riskLevel": "高危",
+      "getControl": "admin",
+      "vulName": "Telnet服务弱密钥",
+      "vulType": "弱密钥",
+      "description": "在实现Telnet功能时候,采用诸如admin/admin,admin/12345之类的用户名密码,这使得远程攻击者很容易破解",
+      "source": "IIE",
+      "type": "配置错误",
+      "version": "1.0",
+      "devicePermit": "controllable",
+      "platform": "Linux",
+      "patch": false,
+      "referIds": [],
+      "getPicture": "false",
+      "service": "Telnet",
+      "vulExist": false,
+      "vulId": "IIE-weakPW-TELNET"
+    },
+    "parent": "a7d252cad62aa431ec0347d2564c5a11",
+    "resType": "vul_info",
+    "priLevel": 5,
+    "portInfo": {
+      "protocol": "Telnet",
+      "port": 23,
+      "timestampSent": 1500934372000,
+      "banner": "\r\n-----------------------------------------------------------------------\r\nCisco Configuration Professional (Cisco CP) is installed on this device. \r\nThis feature requires the one-time use of the username \"cisco\" with the \r\npassword \"cisco\". These default credentials have a privilege level of 15.\r\n \r\nYOU MUST USE CISCO CP or the CISCO IOS CLI TO CHANGE THESE  PUBLICLY-KNOWN \r\nCREDENTIALS\r\n\r\nHere are the Cisco IOS commands.\r\n\r\nusername <myuser>  privilege 15 secret 0 <mypassword>\r\nno username cis",
+      "deviceInfo": {
+        "deviceType": "Switch",
+        "deviceCategory": "Network Equipment",
+        "deviceService": "Telnet",
+        "deviceModel": "IOS",
+        "deviceBrand": "Cisco",
+        "deviceLocation": {
+          "owner": "",
+          "country": "几内亚",
+          "areaCode": "",
+          "province": "几内亚",
+          "city": "",
+          "countryCode": "GN",
+          "timezone": "Africa/Conakry",
+          "district": "",
+          "lon": "-9.66063",
+          "operator": "",
+          "lat": "9.93488"
+        }
+      },
+      "status": "",
+      "timestampReceived": 1500934372000
+    },
+    "rid": "12161_41_242_91_199",
+    "userName": "device_search",
+    "ipInfo": {
+      "ip": "41.242.91.199"
+    },
+    "userId": "12161",
+    "routing": "a6607343313eebd8e4d48e4260ade838",
+    "vpsInfo": {
+      "vpsName": "10-8-65-100",
+      "vpsIpExternal": "107.150.124.73",
+      "vpsIpInternal": "127.0.0.1"
+    },
+    "appType": "device_search",
+    "id": "4af7ba104363fc125219b3f8cbd73e15",
+    "lastModified": 1504594490594,
+    "taskId": "deviceScanTask_1501558594_23"
+  },
+  {
+    "vulInfo": {
+      "riskLevel": "高危",
+      "getControl": "admin",
+      "vulName": "Telnet服务弱密钥",
+      "vulType": "弱密钥",
+      "description": "在实现Telnet功能时候,采用诸如admin/admin,admin/12345之类的用户名密码,这使得远程攻击者很容易破解",
+      "source": "IIE",
+      "type": "配置错误",
+      "version": "1.0",
+      "devicePermit": "controllable",
+      "platform": "Linux",
+      "patch": false,
+      "referIds": [],
+      "getPicture": "false",
+      "service": "Telnet",
+      "vulExist": false,
+      "vulId": "IIE-weakPW-TELNET"
+    },
+    "parent": "405bca8ffb15f9d183b0459c4121f2d2",
+    "resType": "vul_info",
+    "priLevel": 5,
+    "portInfo": {
+      "protocol": "Telnet",
+      "port": 23,
+      "timestampSent": 1500968018000,
+      "banner": "\r\nAccount:",
+      "deviceInfo": {
+        "deviceService": "Telnet",
+        "deviceLocation": {
+          "owner": "",
+          "country": "英国",
+          "areaCode": "",
+          "province": "英国",
+          "city": "",
+          "countryCode": "GB",
+          "timezone": "Europe/London",
+          "district": "",
+          "lon": "-2.23001",
+          "operator": "bt.com",
+          "lat": "54.314072"
+        }
+      },
+      "status": "",
+      "timestampReceived": 1500968018000
+    },
+    "rid": "12161_80_229_109_43",
+    "userName": "device_search",
+    "ipInfo": {
+      "ip": "80.229.109.43"
+    },
+    "userId": "12161",
+    "routing": "1fc44428e8c0456134ddb567c24a2687",
+    "vpsInfo": {
+      "vpsName": "10-8-118-231",
+      "vpsIpExternal": "107.150.124.65",
+      "vpsIpInternal": "127.0.0.1"
+    },
+    "appType": "device_search",
+    "id": "f8aa1b2582dcbc43f05251045090a902",
+    "lastModified": 1504595375332,
+    "taskId": "deviceScanTask_1501558594_23"
+  },
+  {
+    "parent": "f8edd07daf7ee423bc803cf23a33ae69",
+    "resType": "port_info",
+    "priLevel": 5,
+    "portInfo": {
+      "protocol": "HTTP",
+      "port": 80,
+      "timestampSent": 1500933648000,
+      "banner": "HTTP/1.1 200 OK\r\ncontent-length: 10163\r\ncontent-type: text/html\r\nlast-modified: Thu, 01 Jan 1970 00:00:00 GMT\r\np3p: CP=CAO PSA OUR\r\ndate: Tue, 25 Jul 2017 17:49:23 GMT\r\netag: \"0:27b3\"\r\n锘�<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html> \r\n<head>\r\n<title>WEB SERVICE</title>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" >\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=6;IE=7; IE=8; IE=EmulateIE7\" />\r\n<script ",
+      "deviceInfo": {
+        "deviceCategory": "Monitor",
+        "deviceService": "HTTP",
+        "deviceBrand": "Dahua",
+        "deviceLocation": {
+          "country": "中国",
+          "areaCode": "210104",
+          "province": "辽宁",
+          "city": "沈阳",
+          "district": "大东区",
+          "lon": "123.46997",
+          "lat": "41.80539"
+        }
+      },
+      "status": "200",
+      "timestampReceived": 1500933648000
+    },
+    "rid": "12161_113_224_234_252",
+    "userName": "device_search",
+    "ipInfo": {
+      "ip": "113.224.234.252"
+    },
+    "userId": "12161",
+    "routing": "f8edd07daf7ee423bc803cf23a33ae69",
+    "appType": "device_search",
+    "id": "0bcd2666d87630e91deb1c6a3555a1cb",
+    "lastModified": 1504201314414,
+    "taskId": "deviceScanTask_1501555343_80"
+  },
+  {
+    "vulInfo": {
+      "riskLevel": "高危",
+      "getControl": "admin",
+      "vulName": "Telnet服务弱密钥",
+      "vulType": "弱密钥",
+      "description": "在实现Telnet功能时候,采用诸如admin/admin,admin/12345之类的用户名密码,这使得远程攻击者很容易破解",
+      "source": "IIE",
+      "type": "配置错误",
+      "version": "1.0",
+      "devicePermit": "controllable",
+      "platform": "Linux",
+      "patch": false,
+      "referIds": [],
+      "getPicture": "false",
+      "service": "Telnet",
+      "vulExist": false,
+      "vulId": "IIE-weakPW-TELNET"
+    },
+    "parent": "1d8307b48abeb9b6c86980e613dd98e7",
+    "resType": "vul_info",
+    "priLevel": 5,
+    "portInfo": {
+      "protocol": "Telnet",
+      "port": 23,
+      "timestampSent": 1500993215000,
+      "banner": "\r\r\n(none) login: ",
+      "deviceInfo": {
+        "deviceService": "Telnet",
+        "deviceLocation": {
+          "owner": "",
+          "country": "韩国",
+          "areaCode": "",
+          "province": "韩国",
+          "city": "",
+          "countryCode": "KR",
+          "timezone": "Asia/Seoul",
+          "district": "",
+          "lon": "127.850166",
+          "operator": "kt.com",
+          "lat": "36.448151"
+        }
+      },
+      "status": "",
+      "timestampReceived": 1500993215000
+    },
+    "rid": "12161_221_166_106_156",
+    "userName": "device_search",
+    "ipInfo": {
+      "ip": "221.166.106.156"
+    },
+    "userId": "12161",
+    "routing": "5391d997de91bc386c5bf385f22a712e",
+    "vpsInfo": {
+      "vpsName": "10-8-92-115",
+      "vpsIpExternal": "107.150.124.84",
+      "vpsIpInternal": "127.0.0.1"
+    },
+    "appType": "device_search",
+    "id": "1a8054e5b66d995acbb2ee8908d14d80",
+    "lastModified": 1504595375334,
+    "taskId": "deviceScanTask_1501558594_23"
+  }
+]

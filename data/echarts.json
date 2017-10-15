@@ -1,0 +1,852 @@
+[
+  {
+    "data": [
+      {
+        "name": "节点1"
+      },
+      {
+        "name": "节点2"
+      },
+      {
+        "name": "节点3"
+      },
+      {
+        "name": "节点4"
+      },
+      {
+        "name": "节点5"
+      },
+      {
+        "name": "节点6"
+      },
+      {
+        "name": "节点7"
+      },
+      {
+        "name": "节点8"
+      },
+      {
+        "name": "节点9"
+      },
+      {
+        "name": "节点10"
+      }
+    ],
+    "links": [
+      {
+        "source": "节点1",
+        "target": "节点3",
+        "lineStyle": {
+          "normal": {
+            "color": "#00FF7F"
+          }
+        }
+      },
+      {
+        "source": "节点2",
+        "target": "节点3"
+      },
+      {
+        "source": "节点4",
+        "target": "节点3"
+      },
+      {
+        "source": "节点3",
+        "target": "节点3"
+      },
+      {
+        "source": "节点5",
+        "target": "节点3"
+      },
+      {
+        "source": "节点1",
+        "target": "节点2"
+      },
+      {
+        "source": "节点4",
+        "target": "节点3"
+      },
+      {
+        "source": "节点5",
+        "target": "节点6"
+      },
+      {
+        "source": "节点7",
+        "target": "节点6"
+      },
+      {
+        "source": "节点9",
+        "target": "节点10"
+      },
+      {
+        "source": "节点10",
+        "target": "节点8"
+      }
+    ]
+  },
+  {
+    "data": [
+      {
+        "name": "节点1"
+      },
+      {
+        "name": "节点2"
+      },
+      {
+        "name": "节点3"
+      },
+      {
+        "name": "节点4"
+      },
+      {
+        "name": "节点5"
+      },
+      {
+        "name": "节点6"
+      },
+      {
+        "name": "节点7"
+      },
+      {
+        "name": "节点8"
+      },
+      {
+        "name": "节点9"
+      },
+      {
+        "name": "节点10"
+      }
+    ],
+    "links": [
+      {
+        "source": "节点1",
+        "target": "节点4",
+        "lineStyle": {
+          "normal": {
+            "color": "#00FF7F"
+          }
+        }
+      },
+      {
+        "source": "节点2",
+        "target": "节点3"
+      },
+      {
+        "source": "节点4",
+        "target": "节点3"
+      },
+      {
+        "source": "节点5",
+        "target": "节点3"
+      },
+      {
+        "source": "节点8",
+        "target": "节点3"
+      },
+      {
+        "source": "节点6",
+        "target": "节点2"
+      },
+      {
+        "source": "节点4",
+        "target": "节点3"
+      },
+      {
+        "source": "节点10",
+        "target": "节点6"
+      },
+      {
+        "source": "节点9",
+        "target": "节点6"
+      },
+      {
+        "source": "节点9",
+        "target": "节点10"
+      },
+      {
+        "source": "节点10",
+        "target": "节点8"
+      }
+    ]
+  },
+  {
+    "data": [
+      {
+        "name": "节点1"
+      },
+      {
+        "name": "节点2"
+      },
+      {
+        "name": "节点3"
+      },
+      {
+        "name": "节点4"
+      },
+      {
+        "name": "节点5"
+      },
+      {
+        "name": "节点6"
+      },
+      {
+        "name": "节点7"
+      },
+      {
+        "name": "节点8"
+      },
+      {
+        "name": "节点9"
+      },
+      {
+        "name": "节点10"
+      }
+    ],
+    "links": [
+      {
+        "source": "节点9",
+        "target": "节点3",
+        "lineStyle": {
+          "normal": {
+            "color": "#00FF7F"
+          }
+        }
+      },
+      {
+        "source": "节点8",
+        "target": "节点3"
+      },
+      {
+        "source": "节点6",
+        "target": "节点3"
+      },
+      {
+        "source": "节点3",
+        "target": "节点5"
+      },
+      {
+        "source": "节点5",
+        "target": "节点3"
+      },
+      {
+        "source": "节点1",
+        "target": "节点2"
+      },
+      {
+        "source": "节点4",
+        "target": "节点3"
+      },
+      {
+        "source": "节点4",
+        "target": "节点6"
+      },
+      {
+        "source": "节点7",
+        "target": "节点5"
+      },
+      {
+        "source": "节点9",
+        "target": "节点10"
+      },
+      {
+        "source": "节点10",
+        "target": "节点8"
+      }
+    ]
+  },
+  {
+    "data": [
+      {
+        "name": "节点1"
+      },
+      {
+        "name": "节点2"
+      },
+      {
+        "name": "节点3"
+      },
+      {
+        "name": "节点4"
+      },
+      {
+        "name": "节点5"
+      },
+      {
+        "name": "节点6"
+      },
+      {
+        "name": "节点7"
+      },
+      {
+        "name": "节点8"
+      },
+      {
+        "name": "节点9"
+      },
+      {
+        "name": "节点10"
+      }
+    ],
+    "links": [
+      {
+        "source": "节点10",
+        "target": "节点3",
+        "lineStyle": {
+          "normal": {
+            "color": "#00FF7F"
+          }
+        }
+      },
+      {
+        "source": "节点5",
+        "target": "节点3"
+      },
+      {
+        "source": "节点4",
+        "target": "节点8"
+      },
+      {
+        "source": "节点3",
+        "target": "节点8"
+      },
+      {
+        "source": "节点5",
+        "target": "节点9"
+      },
+      {
+        "source": "节点1",
+        "target": "节点2"
+      },
+      {
+        "source": "节点4",
+        "target": "节点3"
+      },
+      {
+        "source": "节点8",
+        "target": "节点6"
+      },
+      {
+        "source": "节点10",
+        "target": "节点6"
+      },
+      {
+        "source": "节点9",
+        "target": "节点10"
+      },
+      {
+        "source": "节点10",
+        "target": "节点8"
+      }
+    ]
+  },
+  {
+    "data": [
+      {
+        "name": "节点1"
+      },
+      {
+        "name": "节点2"
+      },
+      {
+        "name": "节点3"
+      },
+      {
+        "name": "节点4"
+      },
+      {
+        "name": "节点5"
+      },
+      {
+        "name": "节点6"
+      },
+      {
+        "name": "节点7"
+      },
+      {
+        "name": "节点8"
+      },
+      {
+        "name": "节点9"
+      },
+      {
+        "name": "节点10"
+      }
+    ],
+    "links": [
+      {
+        "source": "节点10",
+        "target": "节点3",
+        "lineStyle": {
+          "normal": {
+            "color": "#00FF7F"
+          }
+        }
+      },
+      {
+        "source": "节点1",
+        "target": "节点3"
+      },
+      {
+        "source": "节点4",
+        "target": "节点4"
+      },
+      {
+        "source": "节点3",
+        "target": "节点6"
+      },
+      {
+        "source": "节点8",
+        "target": "节点3"
+      },
+      {
+        "source": "节点1",
+        "target": "节点2"
+      },
+      {
+        "source": "节点4",
+        "target": "节点3"
+      },
+      {
+        "source": "节点5",
+        "target": "节点6"
+      },
+      {
+        "source": "节点7",
+        "target": "节点6"
+      },
+      {
+        "source": "节点9",
+        "target": "节点10"
+      },
+      {
+        "source": "节点10",
+        "target": "节点8"
+      }
+    ]
+  },
+  {
+    "data": [
+      {
+        "name": "节点1"
+      },
+      {
+        "name": "节点2"
+      },
+      {
+        "name": "节点3"
+      },
+      {
+        "name": "节点4"
+      },
+      {
+        "name": "节点5"
+      },
+      {
+        "name": "节点6"
+      },
+      {
+        "name": "节点7"
+      },
+      {
+        "name": "节点8"
+      },
+      {
+        "name": "节点9"
+      },
+      {
+        "name": "节点10"
+      }
+    ],
+    "links": [
+      {
+        "source": "节点3",
+        "target": "节点3",
+        "lineStyle": {
+          "normal": {
+            "color": "#00FF7F"
+          }
+        }
+      },
+      {
+        "source": "节点2",
+        "target": "节点3"
+      },
+      {
+        "source": "节点4",
+        "target": "节点3"
+      },
+      {
+        "source": "节点3",
+        "target": "节点6"
+      },
+      {
+        "source": "节点5",
+        "target": "节点3"
+      },
+      {
+        "source": "节点1",
+        "target": "节点8"
+      },
+      {
+        "source": "节点4",
+        "target": "节点3"
+      },
+      {
+        "source": "节点5",
+        "target": "节点6"
+      },
+      {
+        "source": "节点9",
+        "target": "节点6"
+      },
+      {
+        "source": "节点9",
+        "target": "节点10"
+      },
+      {
+        "source": "节点10",
+        "target": "节点8"
+      }
+    ]
+  },
+  {
+    "data": [
+      {
+        "name": "节点1"
+      },
+      {
+        "name": "节点2"
+      },
+      {
+        "name": "节点3"
+      },
+      {
+        "name": "节点4"
+      },
+      {
+        "name": "节点5"
+      },
+      {
+        "name": "节点6"
+      },
+      {
+        "name": "节点7"
+      },
+      {
+        "name": "节点8"
+      },
+      {
+        "name": "节点9"
+      },
+      {
+        "name": "节点10"
+      }
+    ],
+    "links": [
+      {
+        "source": "节点4",
+        "target": "节点3",
+        "lineStyle": {
+          "normal": {
+            "color": "#00FF7F"
+          }
+        }
+      },
+      {
+        "source": "节点2",
+        "target": "节点3"
+      },
+      {
+        "source": "节点4",
+        "target": "节点3"
+      },
+      {
+        "source": "节点8",
+        "target": "节点3"
+      },
+      {
+        "source": "节点6",
+        "target": "节点3"
+      },
+      {
+        "source": "节点8",
+        "target": "节点2"
+      },
+      {
+        "source": "节点7",
+        "target": "节点3"
+      },
+      {
+        "source": "节点5",
+        "target": "节点6"
+      },
+      {
+        "source": "节点7",
+        "target": "节点9"
+      },
+      {
+        "source": "节点9",
+        "target": "节点10"
+      },
+      {
+        "source": "节点10",
+        "target": "节点8"
+      }
+    ]
+  },
+  {
+    "data": [
+      {
+        "name": "节点1"
+      },
+      {
+        "name": "节点2"
+      },
+      {
+        "name": "节点3"
+      },
+      {
+        "name": "节点4"
+      },
+      {
+        "name": "节点5"
+      },
+      {
+        "name": "节点6"
+      },
+      {
+        "name": "节点7"
+      },
+      {
+        "name": "节点8"
+      },
+      {
+        "name": "节点9"
+      },
+      {
+        "name": "节点10"
+      }
+    ],
+    "links": [
+      {
+        "source": "节点2",
+        "target": "节点3",
+        "lineStyle": {
+          "normal": {
+            "color": "#00FF7F"
+          }
+        }
+      },
+      {
+        "source": "节点4",
+        "target": "节点3"
+      },
+      {
+        "source": "节点6",
+        "target": "节点3"
+      },
+      {
+        "source": "节点3",
+        "target": "节点7"
+      },
+      {
+        "source": "节点5",
+        "target": "节点9"
+      },
+      {
+        "source": "节点1",
+        "target": "节点2"
+      },
+      {
+        "source": "节点4",
+        "target": "节点3"
+      },
+      {
+        "source": "节点5",
+        "target": "节点1"
+      },
+      {
+        "source": "节点7",
+        "target": "节点6"
+      },
+      {
+        "source": "节点9",
+        "target": "节点10"
+      },
+      {
+        "source": "节点10",
+        "target": "节点8"
+      }
+    ]
+  },
+  {
+    "data": [
+      {
+        "name": "节点1"
+      },
+      {
+        "name": "节点2"
+      },
+      {
+        "name": "节点3"
+      },
+      {
+        "name": "节点4"
+      },
+      {
+        "name": "节点5"
+      },
+      {
+        "name": "节点6"
+      },
+      {
+        "name": "节点7"
+      },
+      {
+        "name": "节点8"
+      },
+      {
+        "name": "节点9"
+      },
+      {
+        "name": "节点10"
+      }
+    ],
+    "links": [
+      {
+        "source": "节点1",
+        "target": "节点3",
+        "lineStyle": {
+          "normal": {
+            "color": "#00FF7F"
+          }
+        }
+      },
+      {
+        "source": "节点2",
+        "target": "节点3"
+      },
+      {
+        "source": "节点6",
+        "target": "节点3"
+      },
+      {
+        "source": "节点3",
+        "target": "节点3"
+      },
+      {
+        "source": "节点5",
+        "target": "节点3"
+      },
+      {
+        "source": "节点1",
+        "target": "节点2"
+      },
+      {
+        "source": "节点9",
+        "target": "节点3"
+      },
+      {
+        "source": "节点5",
+        "target": "节点6"
+      },
+      {
+        "source": "节点7",
+        "target": "节点6"
+      },
+      {
+        "source": "节点9",
+        "target": "节点10"
+      },
+      {
+        "source": "节点10",
+        "target": "节点8"
+      }
+    ]
+  },
+  {
+    "data": [
+      {
+        "name": "节点1"
+      },
+      {
+        "name": "节点2"
+      },
+      {
+        "name": "节点3"
+      },
+      {
+        "name": "节点4"
+      },
+      {
+        "name": "节点5"
+      },
+      {
+        "name": "节点6"
+      },
+      {
+        "name": "节点7"
+      },
+      {
+        "name": "节点8"
+      },
+      {
+        "name": "节点9"
+      },
+      {
+        "name": "节点10"
+      }
+    ],
+    "links": [
+      {
+        "source": "节点10",
+        "target": "节点3",
+        "lineStyle": {
+          "normal": {
+            "color": "#00FF7F"
+          }
+        }
+      },
+      {
+        "source": "节点2",
+        "target": "节点3"
+      },
+      {
+        "source": "节点4",
+        "target": "节点3"
+      },
+      {
+        "source": "节点8",
+        "target": "节点3"
+      },
+      {
+        "source": "节点5",
+        "target": "节点3"
+      },
+      {
+        "source": "节点1",
+        "target": "节点2"
+      },
+      {
+        "source": "节点4",
+        "target": "节点3"
+      },
+      {
+        "source": "节点5",
+        "target": "节点6"
+      },
+      {
+        "source": "节点7",
+        "target": "节点6"
+      },
+      {
+        "source": "节点9",
+        "target": "节点10"
+      },
+      {
+        "source": "节点10",
+        "target": "节点8"
+      }
+    ]
+  }
+]

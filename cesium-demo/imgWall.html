@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>照片墙</title>
+</head>
+
+<body>
+
+<style>
+    /*basic reset*/
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        text-align: center; /*overflow: hidden;*/
+    }
+
+    #wall {
+        width: 100%;
+        height: 100%;
+        /*margin: 100px auto 50px auto;*/
+        perspective: 500px; /*For 3d*/
+    }
+
+    #wall img {
+        width: 10%;
+        height: 100px;
+        display: block;
+        float: left;
+    }
+</style>
+<div id="wall">
+
+</div>
+<script src="../lib/jquery-3.2.1.js"></script>
+<script src="jquery.easing.1.3.js"></script>
+<script>
+    var images = "", count = 80;
+    for (var i = 1; i <= count; i++)
+        images += '<img class="grid-image" src="img/' + i + '.jpg" />';
+
+    //appending the images to .grid
+    $("#wall").append(images);
+
+
+    $("img.grid-image").each(function () {
+        d = Math.random() * 1000; //1ms to 1000ms delay
+        $(this).delay(d).animate({opacity: 0}, {
+            //while the thumbnails are fading out, we will use the step function to apply some transforms. variable n will give the current opacity in the animation.
+            step: function (n) {
+                s = 1 - n; //scale - will animate from 0 to 1
+                $(this).css("transform", "scale(" + s + ")");
+            },
+            duration: 500,
+        })
+    }).promise().done(function () {
+        $("#wall .grid-image").each(function () {
+            d = Math.random() * 1000;
+            $(this).delay(d).animate({opacity: 1}, {
+                step: function (n) {
+                    //rotating the images on the Y axis from 360deg to 0deg
+                    ry = (1 - n) * 360;
+                    //translating the images from 1000px to 0px
+                    tz = (1 - n) * 1000;
+                    //applying the transformation
+                    $(this).css("transform", "rotateY(" + ry + "deg) translateZ(" + tz + "px)");
+                },
+                duration: 3000,
+                //some easing fun. Comes from the jquery easing plugin.
+                easing: 'easeOutQuint',
+            })
+        })
+    })
+
+
+</script>
+</body>
+</html>

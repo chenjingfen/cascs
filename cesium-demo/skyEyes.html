@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>天眼系统</title>
+    <link href='http://cdn.webfont.youziku.com/webfonts/nomal/108917/19892/59dc3d09f629d806f81c1c71.css'
+          rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../lib/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../lib/Cesium/Widgets/widgets.css"/>
+    <link rel="stylesheet" href="skyEyes.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<style>
+    #mask{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        margin: 0px;
+        padding: 0px;
+        background:url("../img/mask.png");
+        display: none;
+    }
+    #imageContainer {
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        z-index: 999;
+        top: 0;
+        left: 20%;
+        margin: 0px;
+        padding: 0px;
+       /*background-color: rgba(23, 22, 22, 0.55);*/
+        text-align: center;
+
+    }
+
+    #leftContainer {
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        z-index: 999;
+        top: 0;
+        left: 0;
+       /* background-color: rgba(23, 22, 22, 0.55);*/
+        text-align: center;
+        color: #fff;
+    }
+
+    #leftContainer #chartBar,#leftContainer #chartPie{
+        width: 100%;
+        height: 500px;
+        padding-top: 100px;
+    }
+    #leftContainer ul {
+        list-style: none;
+        height: 80%;
+        margin-top: 20%;
+        overflow: hidden;
+        line-height: 250%;
+    }
+
+    @-webkit-keyframes barberpole {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 60px 30px;
+        }
+    }
+
+    @-moz-keyframes barberpole {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 60px 30px;
+        }
+    }
+
+    @keyframes barberpole {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 60px 30px;
+        }
+    }
+
+    #status {
+        display: none;
+        margin: 20px auto 0;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: calc(15% + 50px);
+        height: 100px;
+        z-index: 9999;
+        background: rgba(17, 39, 63, 0.52);
+        color: #fff;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3), 0px 0px 40px rgba(0, 0, 0, 0.1) inset;
+        -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3), 0px 0px 40px rgba(0, 0, 0, 0.1) inset;
+        margin-left: 10px;
+        border-top: 1px solid #1AB3F7;
+        border-bottom: 1px solid #1AB3F7;
+        padding-left: 1.5rem;
+    }
+
+    #status li {
+        list-style-type: none;
+        line-height: 2rem;
+    }
+
+    #status img {
+        position: absolute;
+        width: 30px;
+        right: 10px;
+        top: 2px;
+    }
+
+    .cesium-viewer-toolbar {
+        z-index: 9999;
+    }
+
+    @font-face {
+        font-family: DSDIGI; /*这里是说明调用来的字体名字*/
+        src: url('../font/DS-DIGI.TTF'); /*这里是字体文件路径*/
+    }
+
+    @font-face {
+        font-family: FZLTCXHK; /*这里是说明调用来的字体名字*/
+        src: url('../font/FZLTCXHK.TTF'); /*这里是字体文件路径*/
+    }
+
+    .banner {
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        width: 50%;
+    }
+
+    .banner img {
+        float: left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .banner h2 {
+        color: #fff;
+        margin-top: 10px;
+        background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgb(235, 241, 240)), to(rgb(103, 169, 238)));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'hdjxytda977b3c21a975';
+        letter-spacing: 5px;
+    }
+
+    .radar-block {
+        display: none;
+        position: absolute;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+        background: rgba(8, 9, 9, 0.69);
+    }
+
+    #screen {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #screen img, #screen canvas {
+
+        position: absolute;
+
+        left: -9999px;
+
+        cursor: pointer;
+
+        image-rendering: optimizeSpeed;
+
+    }
+
+    #screen .href {
+
+        border: #FFF dotted 1px;
+
+    }
+
+    #screen .fog {
+
+        position: absolute;
+
+        background: #fff;
+
+        opacity: 0.1;
+
+        filter: alpha(opacity=10);
+
+    }
+
+    #command {
+        position: absolute;
+        left: 1em;
+        top: 1em;
+        width: 130px;
+        z-index: 30000;
+        /*border: #000 solid 1em;*/
+    }
+
+    #bar {
+
+        position: relative;
+
+        left: 1em;
+
+        top: 1em;
+
+        height: 160px;
+
+    }
+
+    #bar .button {
+
+        position: absolute;
+
+        background: #222;
+
+        width: 20px;
+
+        height: 20px;
+
+        cursor: pointer;
+
+    }
+
+    #bar .loaded {
+
+        background: #666;
+
+    }
+
+    #bar .viewed {
+
+        background: #fff;
+
+    }
+
+    #bar .selected {
+
+        background: #f00;
+
+    }
+
+    #urlInfo {
+
+        position: absolute;
+
+        background: url(img/r.gif) no-repeat 0 4px;
+
+        visibility: hidden;
+
+        z-index: 30000;
+
+        padding-left: 12px;
+
+        cursor: pointer;
+
+    }
+
+
+
+    .btn{
+        width: 80px;
+        height: 30px;
+        text-align: center;
+        vertical-align: middle;
+        background: rgb(54, 198, 211);
+        border: 1px solid #fff;
+        border-radius: 10px;
+        color: #fff;
+        margin: 10px;
+    }
+    .btn:hover{
+        background: rgba(54, 198, 211, 0.71);
+    }
+
+    #imageContainer div.element {
+        width: 160px;
+        height: 160px;
+        box-shadow: 0 0 12px rgba(0,255,255,0.5);
+        border: 1px solid rgba(127,255,255,0.25);
+        text-align: center;
+        cursor: default;
+    }
+    #imageContainer div.element:hover {
+        box-shadow: 0 0 12px rgba(0,255,255,0.75);
+        border: 1px solid rgba(127,255,255,0.75);
+    }
+
+    .search-input{
+        width: 200px;
+        position: absolute;
+        z-index: 9999;
+        right: 0;
+        border-bottom: 1px solid #1AB3F7;
+
+
+    }
+
+    .search-input .input-group-addon{
+        background: transparent;
+        border: none;
+        color: #1AB3F7;
+        font-size: 2rem;
+    }
+    .search-input .search{
+        background: transparent;
+        border: none;
+        color: #fff;
+
+    }
+
+    .search-input .search:focus{
+        border: none;
+        outline: none;
+        box-shadow: none;
+        border-color: transparent;
+    }
+</style>
+<body>
+
+<div class="radar-block">
+    <div class="radar"></div>
+</div>
+
+<div class="banner">
+    <img src="../img/banner.png">
+    <h2>天眼系统</h2>
+</div>
+<form class="input-group search-input">
+    <input type="text" class="form-control search" />
+    <span class="input-group-addon"><span class='glyphicon glyphicon-search'></span></span>
+</form>
+<ul id="status">
+    <li><span>location:</span><label class="location">Unknown</label></li>
+    <li><span>longitude:</span><label class="lon"></label></li>
+    <li><span>latitude:</span><label class="lat"></label></li>
+    <img src="../img/weather/weather_qing.png">
+</ul>
+
+<div id="cesiumContainer"></div>
+<div id="mask">
+    <div id="leftContainer">
+        <ul></ul>
+        <button class="btn" id="prev" data-page="0">上一页</button>
+        <button class="btn" id="next" data-page="2" style="float: right">下一页</button>
+    </div>
+    <div id="imageContainer">
+
+    </div>
+
+</div>
+
+<script src="../lib/jquery-3.2.1.js"></script>
+<script src="../lib/Cesium/Cesium.js"></script>
+<script src="heatMap/heatmap.js"></script>
+<script src="../lib/threeJs/three.min.js"></script>
+<script src="../lib/threeJs/tween.min.js"></script>
+<script src="../lib/threeJs/CSS3DRenderer.js"></script>
+<script src="../lib/threeJs/TrackballControls.js"></script>
+<script src="../lib/md5.js"></script>
+<script src="skyIndex.js"></script>
+</body>
+</html>

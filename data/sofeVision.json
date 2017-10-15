@@ -1,0 +1,26 @@
+[
+  {
+    "name": "MySQL 5.7.17",
+    "des": "关系型数据库管理系统"
+  },
+  {
+    "name": "SQL Server 2008",
+    "des": "关系型数据库系统"
+  },
+  {
+    "name": "redis 4.0.1",
+    "des": "开源的可基于内存亦可持久化的日志型、Key-Value数据库"
+  },
+  {
+    "name": "Processon",
+    "des": "在线流程图制作"
+  },
+  {
+    "name": "Github",
+    "des": "个人代码管理"
+  },
+  {
+    "name": "Indigo Studio 5.0.1",
+    "des": "原型设计工具"
+  }
+]
